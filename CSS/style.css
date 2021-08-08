@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 70%;
+    background: #202020;
+
+}
+
+nav {
+    text-align: center;
+
+    background-color: #323232;
+
+    height: 100vh;
+    min-width: 13vh;
+
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    padding-top: 40vh;
+}
+
+nav ul li {
+    list-style: none;
+    padding-top: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: indianred;
+
+    font-size: 20px;
+
+    border-top: 1px indianred solid;
+    border-bottom: 1px indianred solid;
+}
+
+nav img {
+    width: 13vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+header {
+    padding-top: 35vh;
+    padding-bottom: 50vh;
+    padding-left: 20vh;
+    display: flex;
+    flex-direction: column;
+
+
+    font-family: 'Exo 2', sans-serif;
+    margin: auto;
+
+}
+
+header h1 {
+    color: indianred;
+
+    font-size: 40px;
+    text-align: left;
+
+}
+
+header h2 {
+    color: turquoise;
+
+    font-size: 25px;
+    text-align: left;
+
+    padding-top: 15px;
+}
+
+main {
+    padding-top: 3vh;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+
+    width: 70%;
+    margin: auto;
+}
+
+main h2{
+    font-size: 40px;
+    color: turquoise;
+}
+
+main p {
+    color: white;
+}
+
+.about-section {
+    text-align: left;
+    padding-left: 10vh;
+}
+
+.about-section h2 {
+    color: turquoise;
+}
+
+.about-section p {
+    color: white;
+    font-size: 20px;
+    padding-top: 2vh;
+    min-width: 80%;
+    max-width: 80%;
+}
+
+.container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 10vh;
+    text-align: center;
+
+    padding-top: 25vh;
+}
+
+.container h2, p {
+    text-align: left;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+.container h3 {
+    text-align: left;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 5fr));
+    grid-gap: 2rem;
+}
+
+.section-item {
+    height: auto;
+    padding: 0.5rem;
+    margin: 2rem;
+
+    border-radius: 1%;
+}
+
+.section-item img{
+    height: 20rem;
+    padding: 0.5rem;
+    margin: 2rem;
+}
+
+
+@media screen and (max-width: 1800px) {
+    .about-section {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        margin: 0;
+        width: 100vh;
+    }
+
+    header {
+        padding: 5rem;
+    }
+
+    main {
+        width: 150%;
+        padding: 5rem;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-top: 5rem;
+    }
+
+    .about-section {
+        padding: 0;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+}
